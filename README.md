@@ -1,5 +1,5 @@
-# LeetCode-roadmap-
-This repository stores solutions for LeetCode and Codewars.
+# Algorithmic Tasks
+This repository stores solutions for LeetCode, Codewars and SPOJ.
 
 Technologies:
 - Python
