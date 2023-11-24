@@ -8,3 +8,4 @@ class Solution:
             else:
                 ans += [i]
         return "".join(ans)
+    # test
