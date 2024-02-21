@@ -1,0 +1,33 @@
+import java.util.List;
+import java.util.ArrayList;
+
+public class Accumul {
+    
+    public static String accum(String s) {
+     
+      int n = s.length();
+      
+      List<String> result = new ArrayList<>();
+      
+      for (int i = 0; i < n; i++) {
+        char c = s.charAt(i);
+        boolean isUpperCase = Character.isUpperCase(c);
+
+        if (isUpperCase) {
+          result.add(String.valueOf(c));
+        } else {
+          result.add(String.valueOf(Character.toUpperCase(c)));
+        }
+        
+        for (int j = 0; j < i; j++) {
+          result.add(String.valueOf(Character.toLowerCase(c)));
+        }
+        
+        if (i < n - 1) {
+          result.add("-");
+        }
+      }
+      
+      return String.join("", result);
+    }
+}
